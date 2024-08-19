@@ -37,12 +37,12 @@ body {
 }
 
 .overlay3.blue {
-    background-color: #162e50;
+    background-color: #0bbaff;
     animation-delay: 0s; /* Começa imediatamente */
 }
 
 .overlay3.yellow {
-    background-color: #ffe449;
+    background-color: #162e50;
     animation-delay: 0.5s; /* Atraso de 0,5 segundos */
 }
 
@@ -636,7 +636,7 @@ p {
 }
 
 .content-section button {
-    background-color: #111;
+    background-color: #5fa5ff00;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -644,7 +644,9 @@ p {
 }
 
 .content-section button:hover {
-    background-color: #333;
+    background-color: #33333300;
+   
+    transition: 0.2s;
 }
 .center-image-section {
     text-align: center;

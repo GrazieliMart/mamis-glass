@@ -101,6 +101,7 @@ transition: 0.2s;
 }
 
 .right-carousel {
+    margin-right: 100px;
     position: relative;
     width: 40%; /* Ajuste o tamanho conforme necessário */
 }
@@ -115,13 +116,12 @@ transition: 0.2s;
     min-width: 100%;
     transition: transform 0.5s ease;
 }
-
 .carousel img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
     display: block;
 }
-
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -141,14 +141,55 @@ transition: 0.2s;
     right: 0;
 }.content-section .right-text {
      margin-left: 0px; 
-    padding-left: 20px;
+    padding-left: 50px;
     margin-top: -250px;
 }
+.outer-container {
+    color: #fff;
+  
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
 
+.inner-div { margin-top: -50px;
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center;
+    padding: 10px;
+    margin-right: 100px;
+}
 
+.inner-div video {
+    max-width: 300px; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.inner-div h1 {
+    margin: 0;
+    font-size: 2rem; /* Tamanho do texto */
+    color: #ffffff; /* Cor do texto */
+}
+
+.align-pilares{
+    display: flex;
+    justify-content: space-around;
+    color: #e9e9e9;
+}
+.text-pilares{
+    text-align: center;
+    padding-bottom:100px ;
+}
+.text-pilares span{
+    color: #00ccff;
+}
     </style>
 </head>
-<body> <header>
+<body> 
+    <header>
     <div class="banner">  
         <div class="banner-left">
             <p>
@@ -237,7 +278,28 @@ transition: 0.2s;
 </div>
 
 
-  
+<div class="outer-container">
+    <div class="text-pilares">
+        <img src="assets/logo-design.png" alt="">
+    <h1>OS PILARES DA MAMISGLASS</h1>
+    <hr>
+    <h2>Uma Empresa <span>Brasileira</span> </h2></div>
+
+    <div class="align-pilares">
+    <div class="inner-div">
+        <video src="assets/pilares (1).mp4" autoplay loop muted></video>
+        <h1>AGILIDADE</h1>
+    </div>
+    <div class="inner-div">
+        <video src="assets/pilares (2).mp4" autoplay loop muted></video>
+        <h1>100%</h1>
+    </div>
+    <div class="inner-div">
+        <video src="assets/pilares (3).mp4" autoplay loop muted></video>
+        <h1>PONTUALIDADE</h1>
+    </div></div>
+</div>
+ 
         <br><br>
    
 
