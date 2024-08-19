@@ -146,17 +146,18 @@ transition: 0.2s;
 }
 .outer-container {
     color: #fff;
-  
+    BACKGROUND-COLOR: #000000;
     display: grid;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
 }
-
-.inner-div { margin-top: -50px;
-    display: flex;
-    flex-direction: column; /* Alinha os itens verticalmente */
-    align-items: center; /* Centraliza os itens horizontalmente */
+.inner-div {
+    margin-top: -50px;
+    margin-bottom: 100px;   display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
     text-align: center;
     padding: 10px;
     margin-right: 100px;
@@ -186,6 +187,23 @@ transition: 0.2s;
 .text-pilares span{
     color: #00ccff;
 }
+.video-container {
+    position: relative;
+    display: inline-block;
+}
+
+.draggable-video {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: grab;
+    transition: transform 0.5s ease-out; /* Transição suave ao soltar */
+}
+
+.grabbing {
+    cursor: grabbing;
+}
+
     </style>
 </head>
 <body> 
@@ -287,19 +305,58 @@ transition: 0.2s;
 
     <div class="align-pilares">
     <div class="inner-div">
-        <video src="assets/pilares (1).mp4" autoplay loop muted></video>
-        <h1>AGILIDADE</h1>
+        <div class="video-container">
+            <video src="assets/pilares (1).mp4" autoplay loop muted class="draggable-video"></video>
+        </div>
+           <h1>AGILIDADE</h1>
+        <p>Atendimento Digital com Respostas Rápidas para o seu Conforto e Bom Atendimento</p>
     </div>
     <div class="inner-div">
         <video src="assets/pilares (2).mp4" autoplay loop muted></video>
-        <h1>100%</h1>
+        <h1>PONTUALIDADE</h1>
+        <p>Pontualidade e rapidez do atendimento à entrega, honrando o prometido</p>
     </div>
     <div class="inner-div">
         <video src="assets/pilares (3).mp4" autoplay loop muted></video>
-        <h1>PONTUALIDADE</h1>
+        <h1>100%</h1>
+        <p>Paixão por atender e oferecer realmente o melhor através de nosso time e relacionamento</p>
     </div></div>
 </div>
- 
+ <script>const video = document.querySelector('.draggable-video');
+
+    let isDragging = false;
+    let startX, startY, initialX, initialY;
+    
+    video.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        video.classList.add('grabbing');
+        
+        startX = e.clientX;
+        startY = e.clientY;
+        
+        initialX = video.offsetLeft;
+        initialY = video.offsetTop;
+    });
+    
+    document.addEventListener('mousemove', (e) => {
+        if (isDragging) {
+            const dx = e.clientX - startX;
+            const dy = e.clientY - startY;
+            
+            video.style.transform = `translate(${dx}px, ${dy}px)`;
+        }
+    });
+    
+    document.addEventListener('mouseup', () => {
+        if (isDragging) {
+            isDragging = false;
+            video.classList.remove('grabbing');
+            
+            // Retorna suavemente o vídeo ao seu lugar original
+            video.style.transform = 'translate(0, 0)';
+        }
+    });
+    </script>
         <br><br>
    
 
