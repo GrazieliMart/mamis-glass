@@ -47,9 +47,17 @@
     display: inline-block;
     animation: moveUpDown 2s infinite;
 }
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .ancora-icon i:hover{
 font-size: 55px;
-color: #00b5e2;
+color: #ffffff;
 transition: 0.2s;
 }
 .ancora-icon i {
@@ -69,17 +77,17 @@ transition: 0.2s;
     display: flex;
     height: 800px;
     padding: 0px 20px;
-    background-color: #020200;
+    background-color: #ffffff;
     align-items: center;
     justify-content: space-between;
 }
 .content-section h2 {
     margin-bottom: 15px;
-    color: #d1d1d1;
+    color: #0a0a0a;
 }
 .content-section p {
     margin-bottom: 20px;
-    color: #bdbdbd;
+    color: #525252;
 }
 #afiliado{
     height: 150px;
@@ -101,7 +109,8 @@ transition: 0.2s;
 }
 
 .right-carousel {
-    margin-right: 100px;
+    margin-right: -20px;
+    margin-top: -40px;
     position: relative;
     width: 40%; /* Ajuste o tamanho conforme necessário */
 }
@@ -141,8 +150,8 @@ transition: 0.2s;
     right: 0;
 }.content-section .right-text {
      margin-left: 0px; 
-    padding-left: 50px;
-    margin-top: -250px;
+    padding-left:100px;
+    margin-top: -150px;
 }
 .outer-container {
     color: #fff;
@@ -150,19 +159,39 @@ transition: 0.2s;
     display: grid;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    
 }
 .inner-div {
-    margin-top: -50px;
+    margin-top: -100px;
     margin-bottom: 100px;   display: flex;
     flex-direction: column;
     align-items: center;
-    width: 270px;
+    width: 250px;
     text-align: center;
     padding: 10px;
     margin-right: 100px;
 }
-
+.center-image-section p {
+    margin-bottom: 20px;
+    color: #212121;
+}
+.center-image-section h1 {
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 28px;
+}
+.image-slider {
+    background-color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px 0;
+    margin-top: -20px;
+}
+.center-image-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
 .inner-div video {
     max-width: 300px; /* Ajusta a largura da imagem */
     height: auto; /* Mantém a proporção da imagem */
@@ -177,7 +206,7 @@ transition: 0.2s;
 
 .align-pilares{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     color: #e9e9e9;
 }
 .text-pilares{
@@ -203,49 +232,224 @@ transition: 0.2s;
 .grabbing {
     cursor: grabbing;
 }
-
+@media (max-width: 950px) {
+    .left-content {
+        flex: 1;
+        padding: 0px;
+        margin-top: 0%;
+        text-align: center;
+        color: #fff;
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: slideIn 2s ease-out forwards;
+        animation-delay: 0.1s;
+    }
+    .div-container-left {
+        width: 100%;
+        color: #c9c9c9;
+        font-size: 14px;
+        margin-left: 0px;
+    }
+    .container {
+    display: flex;
+    padding: 0px;
+    margin-top: 5%;
+    width: 100%;
+    height: 750px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.align-pilares {
+    display: grid;
+    justify-content: center;
+    color: #e9e9e9;
+}
+.inner-div h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.inner-div p {
+    font-size: 13px;
+    margin: 20px 0;
+}
+.inner-div video {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.text-pilares {
+    text-align: center;
+    padding-bottom: 100px;
+}
+.text-pilares img{
+    height: 150px;
+}
+.text-pilares h1{
+    font-size: 18px;
+}
+.text-pilares h2{
+    font-size: 15px;
+}
+.outer-container {
+    color: #fff;
+    BACKGROUND-COLOR: #000000;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#inner-left{
+    margin-left: 100px;
+}
+footer .footer-div {
+        /* flex: 1; */
+        padding: 0 100px;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+    }footer .footer-buttons {
+        display: flex;
+        gap: 0px;
+        justify-content: center;
+    }
+    .navbar .logo img {
+        height: 50px;
+        margin-left: 0px;
+        transition: height 0.3s ease;
+    }
+    footer .footer-buttons .button1 {
+        background-color: #fff;
+        color: #000;
+        padding: 10px 10px;
+        border: none;
+        margin-right: 20px;
+        margin-left: 20px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .text-pilares hr{
+        width: 50%;
+    }
+    footer .footer-div:not(:last-child):after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 0px;
+        background-color: #fff;
+    }
+    .inner-div {
+    margin-top: -100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    margin-right: 100px;
+}
+    footer .footer-menu {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 50px;
+    }footer .footer-div {
+        /* flex: 1; */
+        padding: 0 50px;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+    }
+    .image-slider {
+    background-color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px 0;
+    padding: 20px;
+    margin-top: -20px;
+}
+    #ancora{
+        display: none;
+    }
+    footer {
+       
+        color: #fff;
+        padding: 40px 20px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
     </style>
 </head>
 <body> 
     <header>
-    <div class="banner">  
-        <div class="banner-left">
-            <p>
-                <i class="bi bi-envelope"></i>
-                <a href="mailto:contato@mamisglass.com.br">
-                    contato@mamisglass.com.br
-                </a>
-            </p>
+        <div class="banner">  
+            <div class="banner-left">
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    <a href="mailto:contato@mamisglass.com.br">
+                        contato@mamisglass.com.br
+                    </a>
+                </p>
+            </div>
+            
+            <div class="banner-text">
+                <p>Bem-vindo à MAMISGLASS - Transformando seu Ambiente com Vidro</p>
+            </div>
+            <div class="banner-right">
+                <p><a href="https://api.whatsapp.com/send/?phone=5511948829326&text=Ol%C3%A1%21+Vim+do+site+da+MamisGlass.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"><i class="bi bi-telephone-fill"></i> +55 11 98765-4321</p></a>
+            </div>
         </div>
         
-        <div class="banner-text">
-            <p>Bem-vindo à MAMISGLASS - Transformando seu Ambiente com Vidro</p>
-        </div>
-        <div class="banner-right">
-            <p><a href="https://api.whatsapp.com/send/?phone=5511948829326&text=Ol%C3%A1%21+Vim+do+site+da+MamisGlass.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"><i class="bi bi-telephone-fill"></i> +55 11 98765-4321</p></a>
-        </div>
-    </div>
     
-
-    <div class="navbar">
-        <div class="logo">
-            
-        <a href="index.html"><img src="assets/logo-big.png" alt="Logo"></a>
+        <div class="navbar">
+            <div class="logo">
+                
+            <a href="index.html"><img src="assets/logo-big.png" alt="Logo"></a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="sobre.html">SOBRE</a>
+                <a href="produtos.html">PRODUTOS</a>
+                <a href="contato.html">CONTATO</a>
+            </div>
+            <div class="social-media">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/mamisglass/"> <i class="bi bi-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=5511948829326&text=Ol%C3%A1%21+Vim+do+site+da+MamisGlass.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"><i class="bi bi-whatsapp"></i></a>
+                <button class="contact-btn">REALIZAR ORÇAMENTO</button>
+            </div>
+              <!-- Menu Sanduíche -->
+              <div class="menu-toggle">
+                <i class="bi bi-list"></i>
+            </div>
         </div>
-        <div class="nav-links">
+        <div class="mobile-menu">
+            <span class="close-menu">&times;</span>
             <a href="index.html">HOME</a>
             <a href="sobre.html">SOBRE</a>
             <a href="produtos.html">PRODUTOS</a>
             <a href="contato.html">CONTATO</a>
         </div>
-        <div class="social-media">
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/mamisglass/"> <i class="bi bi-instagram"></i></a>
-            <a href="https://api.whatsapp.com/send/?phone=5511948829326&text=Ol%C3%A1%21+Vim+do+site+da+MamisGlass.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"><i class="bi bi-whatsapp"></i></a>
-            <button class="contact-btn">REALIZAR ORÇAMENTO</button>
-        </div>
-    </div>
-</header>
+        
+        <script>// Abrir o Menu
+            document.querySelector('.menu-toggle').addEventListener('click', function() {
+                document.querySelector('.mobile-menu').classList.add('active');
+            });
+            
+            // Fechar o Menu
+            document.querySelector('.close-menu').addEventListener('click', function() {
+                document.querySelector('.mobile-menu').classList.remove('active');
+            });
+            
+        </script>
+    </header>
 
 
 <script src="js/banner.js"></script>
@@ -304,65 +508,80 @@ transition: 0.2s;
     <h2>Uma Empresa <span>Brasileira</span> </h2></div>
 
     <div class="align-pilares">
-    <div class="inner-div">
-        <div class="video-container">
-            <video src="assets/pilares (1).mp4" autoplay loop muted class="draggable-video"></video>
+        <div class="inner-div" style="margin-left: 100px;">
+            <div class="video-container">
+                <video src="assets/pilares (1).mp4" autoplay loop muted class="draggable-video"></video>
+            </div>
+            <h1>AGILIDADE</h1>
+            <p>Atendimento Digital com Respostas Rápidas para o seu Conforto e Bom Atendimento</p>
         </div>
-           <h1>AGILIDADE</h1>
-        <p>Atendimento Digital com Respostas Rápidas para o seu Conforto e Bom Atendimento</p>
-    </div>
-    <div class="inner-div">
-        <video src="assets/pilares (2).mp4" autoplay loop muted></video>
-        <h1>PONTUALIDADE</h1>
-        <p>Pontualidade e rapidez do atendimento à entrega, honrando o prometido</p>
-    </div>
-    <div class="inner-div">
-        <video src="assets/pilares (3).mp4" autoplay loop muted></video>
-        <h1>100%</h1>
-        <p>Paixão por atender e oferecer realmente o melhor através de nosso time e relacionamento</p>
-    </div></div>
-</div>
- <script>const video = document.querySelector('.draggable-video');
-
-    let isDragging = false;
-    let startX, startY, initialX, initialY;
-    
-    video.addEventListener('mousedown', (e) => {
-        isDragging = true;
-        video.classList.add('grabbing');
+        <div class="inner-div" id="inner-left">
+            <video src="assets/pilares (2).mp4" autoplay loop muted class="draggable-video"></video>
+            <h1>PONTUALIDADE</h1>
+            <p>Pontualidade e rapidez do atendimento à entrega, honrando o prometido</p>
+        </div>
+        <div class="inner-div" id="inner-left">
+            <video src="assets/pilares (3).mp4" autoplay loop muted class="draggable-video"></video>
+            <h1>100%</h1>
+            <p>Paixão por atender e oferecer realmente o melhor através de nosso time e relacionamento</p>
+        </div></div>
         
-        startX = e.clientX;
-        startY = e.clientY;
+        <script>
+        document.querySelectorAll('.draggable-video').forEach(video => {
+            let isDragging = false;
+            let startX, startY, initialX, initialY;
         
-        initialX = video.offsetLeft;
-        initialY = video.offsetTop;
-    });
-    
-    document.addEventListener('mousemove', (e) => {
-        if (isDragging) {
-            const dx = e.clientX - startX;
-            const dy = e.clientY - startY;
-            
-            video.style.transform = `translate(${dx}px, ${dy}px)`;
-        }
-    });
-    
-    document.addEventListener('mouseup', () => {
-        if (isDragging) {
-            isDragging = false;
-            video.classList.remove('grabbing');
-            
-            // Retorna suavemente o vídeo ao seu lugar original
-            video.style.transform = 'translate(0, 0)';
-        }
-    });
-    </script>
+            // Define os limites de movimento em pixels
+            const maxMovement = 50; // Limite máximo de movimento em qualquer direção
+        
+            video.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                video.classList.add('grabbing');
+                
+                startX = e.clientX;
+                startY = e.clientY;
+                
+                initialX = video.offsetLeft;
+                initialY = video.offsetTop;
+            });
+        
+            document.addEventListener('mousemove', (e) => {
+                if (isDragging) {
+                    const dx = e.clientX - startX;
+                    const dy = e.clientY - startY;
+        
+                    // Calcula a nova posição dentro dos limites
+                    let newX = initialX + dx;
+                    let newY = initialY + dy;
+        
+                    // Limita o movimento a maxMovement pixels em qualquer direção
+                    if (newX < initialX - maxMovement) newX = initialX - maxMovement;
+                    if (newY < initialY - maxMovement) newY = initialY - maxMovement;
+                    if (newX > initialX + maxMovement) newX = initialX + maxMovement;
+                    if (newY > initialY + maxMovement) newY = initialY + maxMovement;
+        
+                    video.style.transform = `translate(${newX - initialX}px, ${newY - initialY}px)`;
+                }
+            });
+        
+            document.addEventListener('mouseup', () => {
+                if (isDragging) {
+                    isDragging = false;
+                    video.classList.remove('grabbing');
+                    
+                    // Retorna suavemente o vídeo ao seu lugar original
+                    video.style.transform = 'translate(0, 0)';
+                }
+            });
+        });
+        </script>
+        
         <br><br>
    
 
         <div class="content-section" id="ancora">
             <div class="right-text">
-                <img src="assets/logo-big.png" alt="Logo">
+                <img src="assets/logo-big-black.png" alt="Logo">
                 <hr>
                 <div class="text-div-section">
                     <h2>+10 ANOS DE EXPERIÊNCIA</h2>
@@ -396,11 +615,11 @@ transition: 0.2s;
                     <div class="carousel-item">
                         <img src="assets/slide (6).jpg" alt="Imagem 3">
                     </div>
-                  
                 </div>
                 <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
                 <button class="next" onclick="plusSlides(1)">&#10095;</button>
             </div>
+            
         </div>
         </div>
         <script>let slideIndex = 0;
@@ -420,24 +639,23 @@ transition: 0.2s;
             }
             </script>
     <div class="image-slider">
-        <img src="assets/c (1).png" alt="Imagem 1">
-        <img src="assets/c (2).png" alt="Imagem 1"> 
-        <img src="assets/c (3).png" alt="Imagem 1">
-        <img src="assets/c (4).png" alt="Imagem 1"> 
-        <img src="assets/c (5).png" alt="Imagem 1">
-        <img src="assets/c (6).png" alt="Imagem 1">
-        <img src="assets/c (1).png" alt="Imagem 1">
-        <img src="assets/c (2).png" alt="Imagem 1"> 
-        <img src="assets/c (3).png" alt="Imagem 1">
-        <img src="assets/c (4).png" alt="Imagem 1"> 
-        <img src="assets/c (5).png" alt="Imagem 1">
-        <img src="assets/c (6).png" alt="Imagem 1">
-        <img src="assets/c (1).png" alt="Imagem 1">
-        <img src="assets/c (2).png" alt="Imagem 1"> 
-        <img src="assets/c (3).png" alt="Imagem 1">
-        <img src="assets/c (4).png" alt="Imagem 1"> 
-        <img src="assets/c (5).png" alt="Imagem 1">
-        <img src="assets/c (6).png" alt="Imagem 1">
+        <img src="assets/w (1).png" alt="Imagem 1">
+        <img src="assets/w (2).png" alt="Imagem 1"> 
+        <img src="assets/w (3).png" alt="Imagem 1">
+        <img src="assets/w (4).png" alt="Imagem 1"> 
+        <img src="assets/w (5).png" alt="Imagem 1">
+        <img src="assets/w (6).png" alt="Imagem 1">
+        <img src="assets/w (1).png" alt="Imagem 1">
+        <img src="assets/w (2).png" alt="Imagem 1"> 
+        <img src="assets/w (3).png" alt="Imagem 1">
+        <img src="assets/w (4).png" alt="Imagem 1"> 
+        <img src="assets/w (5).png" alt="Imagem 1">
+        <img src="assets/w (6).png" alt="Imagem 1"><img src="assets/w (1).png" alt="Imagem 1">
+        <img src="assets/w (2).png" alt="Imagem 1"> 
+        <img src="assets/w (3).png" alt="Imagem 1">
+        <img src="assets/w (4).png" alt="Imagem 1"> 
+        <img src="assets/w (5).png" alt="Imagem 1">
+        <img src="assets/w (6).png" alt="Imagem 1">
 
        
     </div>

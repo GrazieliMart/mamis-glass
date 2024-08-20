@@ -8,13 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<style>.side-content {
+<style>
+
+.side-content {
     position: relative;
     height: 800px;
-    margin-top: 50px;
+    margin-top: 10%;
     width: 80%; /* Ocupa 100% da largura inicialmente */
     overflow: hidden;
-    background-color: #0b3d91; /* Azul marinho */
+    background-color: #ffffff; /* Azul marinho */
     display: flex;
     align-items: center;
     animation: slideIn 1s ease forwards; /* Animação de entrada */
@@ -31,7 +33,7 @@
 
 .content {
     display: flex;
-    width: 80%; /* Ajuste conforme necessário */
+    width: 100%; /* Ajuste conforme necessário */
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -60,12 +62,13 @@
 }
 
 .content img {
-    width: 50%; /* Ajuste conforme necessário */
+    width: 50%;
+    height: 800px;
 }
 
 .text-section {
     width: 50%;
-    color: white;
+    color: #080808;
 }
 
 .text-section h1 {
@@ -75,13 +78,14 @@
 .text-section .options p {
     margin: 10px 0;
     cursor: pointer;
-    color: #ffcf5f; /* Cor do texto das opções */
+    color: #0bbaff;
+    font-size: 20px;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .text-section .options p:hover {
-    color: #fff; /* Cor do texto ao passar o mouse */
+    color: #3e4247; /* Cor do texto ao passar o mouse */
 }
 .center-section{
     margin-top: 50px;
@@ -131,6 +135,276 @@
     animation-delay: 0;
     transform: translateX(0%);
 }
+body{
+    background-color: #0e1318;
+}
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dynamicImage {
+    transition: opacity 0.5s ease-in-out;
+}
+
+#dynamicTitle, #dynamicText {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+#white-back-btn{
+    padding: 13px 20px;
+    background-color: #00000000;
+    color: #000;
+    color: #212321;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 12px;
+}
+#white-back-btn:hover{
+    background-color: #1a3249;
+    color: #fff;
+}
+#logo-content{
+    width: 50%;
+    height: 200px;
+}
+.icons-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.icon-box {
+    text-align: center;
+    padding: 30px;
+    width: 30%; /* Para garantir que quatro ícones se alinhem horizontalmente com espaçamento */
+}
+
+.icon-box I {
+    margin-bottom: -10px;
+    font-size: 55PX;
+    color: #0bbaff;
+}
+
+.icon-box p {
+    margin-top: -10px;
+    font-size: 14px;
+    color: #333;
+}
+.icon-box h2{
+    font-size: 20px;
+}
+.side-content-duplicate {
+    position: relative;
+    height: 800px;
+    margin-top: 5%;
+    width: 80%;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    animation: slideInDuplicate 1s ease forwards;
+}
+
+@keyframes slideInDuplicate {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.side-content-duplicate {
+    position: relative;
+    height: 800px;
+    margin-top: 5%;
+    width: 80%;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinha a div duplicada à direita */
+    animation: slideInDuplicate 1s ease forwards;
+    margin-left: auto; /* Empurra a div para a direita */
+}
+
+@keyframes slideInDuplicate {
+    from {
+        transform: translateX(100%); /* Animação começando da direita */
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.side-content-duplicate {
+    position: relative;
+    height: 800px;
+    margin-top: 5%;
+    width: 80%;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinha a div duplicada à direita */
+    animation: slideInDuplicate 1s ease forwards;
+    margin-left: auto; /* Empurra a div para a direita */
+}
+
+@keyframes slideInDuplicate {
+    from {
+        transform: translateX(100%); /* Animação começando da direita */
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.content-duplicate {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    margin-right: 0; /* Garantir que não haja margem na direita */
+}
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.text-section-duplicate {
+    width: 50%;
+    color: #080808;
+    text-align: left;
+}
+.content-duplicate img {
+    width: 50%;
+    height: 800px;
+    margin-left: auto; /* Empurra a imagem para a esquerda */
+}
+
+#logo-content-duplicate {
+    width: 50%;
+    height: 200px;
+}
+
+#dynamicTitleDuplicate {
+    margin-bottom: 10px;
+    font-size: 36px;
+    color: #080808;
+}
+
+#dynamicTextDuplicate {
+    font-size: 20px;
+    color: #080808;
+}
+
+#white-back-btn-duplicate {
+    padding: 13px 20px;
+    background-color: #00000000;
+    color: #000;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 12px;
+}
+
+#white-back-btn-duplicate:hover {
+    background-color: #1a3249;
+    color: #fff;
+}
+
+.options-duplicate p {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #0bbaff;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.options-duplicate p:hover {
+    color: #3e4247; /* Cor do texto ao passar o mouse */
+}
+
+.icons-section-duplicate {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.icon-box-duplicate {
+    text-align: center;
+    padding: 30px;
+    width: 30%;
+}
+
+.icon-box-duplicate i {
+    margin-bottom: -10px;
+    font-size: 55px;
+    color: #0bbaff;
+}
+
+.icon-box-duplicate p {
+    margin-top: -10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.icon-box-duplicate h2 {
+    font-size: 20px;
+}.side-content-duplicate {
+    position: relative;
+    height: 800px;
+    margin-top: 5%;
+    width: 80%;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+   
+    transform: translateX(100%); /* Começa fora da tela à direita */
+    transition: opacity 0.5s ease, transform 1s ease; /* Combina a opacidade e o movimento */
+}
+
+.side-content-duplicate.animate {
+    opacity: 1;
+    transform: translateX(0); /* Move para a posição final à esquerda */
+}.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+
 </style>
 </head>
 <body> 
@@ -169,7 +443,7 @@
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/mamisglass/"> <i class="bi bi-instagram"></i></a>
             <a href="https://api.whatsapp.com/send/?phone=5511948829326&text=Ol%C3%A1%21+Vim+do+site+da+MamisGlass.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"><i class="bi bi-whatsapp"></i></a>
-            <button class="contact-btn">REALIZAR ORÇAMENTO</button>
+            <a href="contato.html"><button class="contact-btn">REALIZAR ORÇAMENTO</button></a>
         </div>
     </div>
 </header>
@@ -180,55 +454,302 @@
 <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
 
 
-<div class="container">
-    <video autoplay muted loop class="background-video">
-        <source src="assets/produtos.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-<script src="js/move.js"></script>
-    <div class="left-content">
-        <img src="assets/logo-design.png" alt="">
-        <hr>
-
-        <div class="div-container-left">
+<div class="side-content">
+    <div class="content">
+        <img id="dynamicImage" src="assets/envidraçamento (1).jpg" alt="Imagem Inicial">
+        <div class="text-section" id="textSection">
+            <img src="assets/logo-big-black.png" alt="" id="logo-content">
+            <br><br>
+            <h1 id="dynamicTitle">ENVIDRAÇAMENTOS</h1>
+            <hr>
+            <p id="dynamicText">Envidraçamentos para Sacadas Grandes ou Pequenas com proteção contra vento e água, sistema de fácil manuseio e limpeza.</p>
+            <div class="options">
+                <p class="option" onclick="changeContentFirstDiv('assets/envidraçamento (1).jpg', 'ENVIDRAÇAMENTOS', 'Envidraçamentos para Sacadas Grandes ou Pequenas com proteção contra vento e água, sistema de fácil manuseio e limpeza.')">Envidraçamento</p>
+                <p class="option" onclick="changeContentFirstDiv('assets/envidraçamento (2).jpg', 'SACADAS', 'Sacadas envidraçadas que oferecem conforto e elegância, com proteção completa contra intempéries.')">Sacadas</p>
+                <p class="option" onclick="changeContentFirstDiv('assets/envidraçamento (3).jpg', 'FACHADAS', 'Fachadas modernas e seguras com envidraçamento de alta qualidade e resistência.')">Fachadas</p>
+            </div>
             <br>
-            <h1 style="color: #fff;"><b>PRODUTOS E SERVIÇOS</b></h1>
-            <br>
-               <div class="align-button">
-                     <a href="contact.html"><button class="contact-btn">REALIZAR ORÇAMENTO</button></a>
+            <a href="contato.html"><button class="contact-btn" id="white-back-btn">REALIZAR ORÇAMENTO</button></a>
+            <br><br>
+            <!-- Nova div para os ícones -->
+            <div class="icons-section">
+                <div class="icon-box">
+                    <i class="bi bi-cloud-sleet-fill"></i>
+                    <H2>PROTEÇÃO</H2><p>Proteção completa contra chuvas, vento e impactos.</p>
+                </div>
+                <div class="icon-box">
+                    <i class="bi bi-hammer"></i>
+                    <h2>ACABAMENTO</h2>
+                    <p>Sistema de fácil manuseio para sacadas grandes e pequenas.</p>
+                </div>
+                <div class="icon-box">
+                    <i class="bi bi-house"></i>
+                    <h2 style="font-size: 18px;">APARTAMENTO E CASAS</h2>
+                    <p>Fachadas e Sacadas para residências e apartamento.</p>
+                </div>
             </div>
         </div>
-        
     </div>
-    
-    
-    
-    <script src="js/move.js"></script>
-    
-    
+</div>
+
+<div class="side-content-duplicate">
+    <div class="content-duplicate">
+        <img id="dynamicImageDuplicate" src="assets/espelhos (1).jpg" alt="Imagem Inicial Duplicada">
+        <div class="text-section-duplicate" id="textSectionDuplicate">
+            <img src="assets/logo-big-black.png" alt="" id="logo-content-duplicate">
+            <br><br>
+            <h1 id="dynamicTitleDuplicate">ESPELHOS</h1>
+            <hr>
+            <p id="dynamicTextDuplicate">Espelhos para todos os tipos de projetos com resistência e durabilidade.</p>
+            <div class="options-duplicate">
+                <p class="option-duplicate" onclick="changeContentSecondDiv('assets/espelhos (1).jpg', 'ESPELHO ILUMINADO', 'Com LED embutido para instalação em penteadeiras, banheiros, decoração e mais.')">Espelho Iluminado</p>
+                <p class="option-duplicate" onclick="changeContentSecondDiv('assets/espelhos (2).jpg', 'MONTAGEM', 'Revestimento de Paredes, Salas e Guarda-Roupas para salas com espelhos.')">Montagem de Espelhos</p>
+                <p class="option-duplicate" onclick="changeContentSecondDiv('assets/espelhos (3).jpg', 'ESPELHO LAPIDADO', 'Espelhos com melhor custo benefício com acabamento tradicional.')">Espelho Lapidado</p>
+            </div>
+            <br>
+            <a href="contato.html"><button class="contact-btn-duplicate" id="white-back-btn-duplicate">REALIZAR ORÇAMENTO</button></a>
+            <br><br>
+            <!-- Nova div para os ícones -->
+            <div class="icons-section-duplicate">
+                <div class="icon-box-duplicate">
+                    <i class="bi bi-shield"></i>
+                    <h2>SEGURANÇA</h2>
+                    <p>Segurança reforçada para todas as instalações.</p>
+                </div>
+                <div class="icon-box-duplicate">
+                    <i class="bi bi-tools"></i>
+                    <h2>INSTALAÇÃO</h2>
+                    <p>Instalação rápida e eficiente.</p>
+                </div>
+                <div class="icon-box-duplicate">
+                    <i class="bi bi-image-alt"></i>
+                    <h2>QUALIDADE</h2>
+                    <p>Vidros temperados para todos os projetos da sua casa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="side-content">
     <div class="content">
-        <img id="dynamicImage" src="assets/logo-design.png" alt="Imagem Inicial">
-        <div class="text-section">
-            <h1>ENVIDRAÇAMENTOS</h1>
+        <img id="dynamicImageThird" src="assets/box (3).jpg" alt="Imagem Inicial">
+        <div class="text-section" id="textSectionThird">
+            <img src="assets/logo-big-black.png" alt=""  id="logo-content">
+            <br><br>
+            <h1 id="dynamicTitleThird">BOX PARA BANHEIRO</h1>
             <hr>
-            <p>Envidraçamentos para Sacadas Grandes ou Pequenas com proteção contra vento e água, sistema de fácil manuseio e limpeza.</p>
-            <div class="options">
-                <p class="option" onclick="changeImage('assets/image1.png')">Envidraçamento</p>
-                <p class="option" onclick="changeImage('assets/image2.png')">Sacadas</p>
-                <p class="option" onclick="changeImage('assets/image3.png')">Fachadas</p>
+            <p id="dynamicTextThird">Transforme seu banheiro com nossa variedade de Boxes de Vidro. Garantimos a qualidade, preços justos e entrega rápida.</p>
+          
+                <div class="options">
+                    <p class="option" onclick="changeContentThirdDiv('assets/box (1).jpg', 'BOX PARA BANHEIROS PEQUENOS', 'Soluções para ambientes menores com box de correr ou de abrir.')">Banheiros Pequenos</p>
+                    <p class="option" onclick="changeContentThirdDiv('assets/box (2).jpg', 'BOX ATÉ O TETO', 'Diversos Modelos para Boxes até o teto. Do mais simples ao sofisticado.')">Box até o teto</p>
+                    <p class="option" onclick="changeContentThirdDiv('assets/box (3).jpg', 'ESQUADRIAS E ESPECIAIS', 'Projetos diferenciados, box em esquadrias minimalistas,roldanas aparentes e mais.')">Esquadrias e Especiais</p>
+                </div>
+            
+            <br>
+            <a href="contato.html"><button class="contact-btn" id="white-back-btn">REALIZAR ORÇAMENTO</button></a>
+            <br><br>
+            <!-- Nova div para os ícones -->
+            <div class="icons-section">
+                <div class="icon-box">
+                    <i class="bi bi-check-circle"></i>
+                    <H2>ACABAMENTO</H2><p>Acamento detalhado contra vazamentos.</p>
+                </div>
+                <div class="icon-box">
+                    <i class="bi bi-stars"></i>
+                    <h2>LIMPEZA</h2>
+                    <p>Vidro de qualidade para limpeza de fácil manuseio.</p>
+                </div>
+                <div class="icon-box">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <h2 style="font-size: 18px;">QUALIDADE</h2>
+                    <p>Vidros Temperados contra impacto.</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<script>function changeImage(imagePath) {
-    document.getElementById('dynamicImage').src = imagePath;
+
+<div class="side-content-duplicate">
+    <div class="content-duplicate">
+        <img id="dynamicImageDuplicate2" src="assets/esquadrias (1).jpg" alt="Imagem Inicial Duplicada">
+        <div class="text-section-duplicate" id="textSectionDuplicate2">
+            <img src="assets/logo-big-black.png" alt="" id="logo-content">
+            <br><br>
+            <h1 id="dynamicTitleDuplicate2">ESQUADRIAS</h1>
+            <hr>
+            <p id="dynamicTextDuplicate2">Soluções personalizadas em esquadrias de alumínio: Produzimos estruturas de alta qualidade e design diferenciado para obras de todos os níveis, desde as mais simples até as mais complexas e exclusivas.</p>
+            <div class="options-duplicate">
+                <p class="option-duplicate" onclick="changeContentDuplicateDiv('assets/esquadrias (1).jpg', 'Detalhamento', 'Caixilhos para janelas, portas e fachadas para a sua casa.')">Espelho Iluminado</p>
+                <p class="option-duplicate" onclick="changeContentDuplicateDiv('assets/esquadrias (2).jpg', 'Cobertura de Vidro', 'Coberturas, pergolados e telhados de vidro com alumínio, inox e ferro.')">Cobertura de Vidro</p>
+                <p class="option-duplicate" onclick="changeContentDuplicateDiv('assets/envidraçamento (3).jpg', 'Ripado de Alumínio', 'Revestimento de Fachadas, áreas internas, portões e tetos com aspecto similar à madeira')">Ripado de Alumínio</p>
+            </div>
+            <br>
+            <a href="contato.html"><button class="contact-btn-duplicate" id="white-back-btn-duplicate2">REALIZAR ORÇAMENTO</button></a>
+            <br><br>
+            <div class="icons-section-duplicate">
+                <div class="icon-box-duplicate" id="icon-box-duplicate-1">
+                    <i class="bi bi-shield"></i>
+                    <h2>SEGURANÇA</h2>
+                    <p>Segurança reforçada para todas as instalações.</p>
+                </div>
+                <div class="icon-box-duplicate" id="icon-box-duplicate-2">
+                    <i class="bi bi-tools"></i>
+                    <h2>INSTALAÇÃO</h2>
+                    <p>Instalação rápida e eficiente.</p>
+                </div>
+                <div class="icon-box-duplicate" id="icon-box-duplicate-3">
+                    <i class="bi bi-image-alt"></i>
+                    <h2>QUALIDADE</h2>
+                    <p>Vidros temperados para todos os projetos da sua casa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+    .fade-out {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .fade-in {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+</style>
+
+
+<script>
+   function changeContentDuplicateDiv(imagePath, titleText, paragraphText) {
+    const image = document.getElementById('dynamicImageDuplicate2');
+    const title = document.getElementById('dynamicTitleDuplicate2');
+    const text = document.getElementById('dynamicTextDuplicate2');
+
+    image.classList.add('fade-out');
+    title.classList.add('fade-out');
+    text.classList.add('fade-out');
+
+    setTimeout(() => {
+        image.src = imagePath;
+        title.textContent = titleText;
+        text.textContent = paragraphText;
+
+        image.classList.remove('fade-out');
+        title.classList.remove('fade-out');
+        text.classList.remove('fade-out');
+
+        image.classList.add('fade-in');
+        title.classList.add('fade-in');
+        text.classList.add('fade-in');
+
+        setTimeout(() => {
+            image.classList.remove('fade-in');
+            title.classList.remove('fade-in');
+            text.classList.remove('fade-in');
+        }, 500);
+    }, 500);
 }
+
+
+
+    function changeContentFirstDiv(imagePath, titleText, paragraphText) {
+        const image = document.getElementById('dynamicImage');
+        const title = document.getElementById('dynamicTitle');
+        const text = document.getElementById('dynamicText');
+    
+        image.classList.add('fade-out');
+        title.classList.add('fade-out');
+        text.classList.add('fade-out');
+    
+        setTimeout(() => {
+            image.src = imagePath;
+            title.textContent = titleText;
+            text.textContent = paragraphText;
+    
+            image.classList.remove('fade-out');
+            title.classList.remove('fade-out');
+            text.classList.remove('fade-out');
+    
+            image.classList.add('fade-in');
+            title.classList.add('fade-in');
+            text.classList.add('fade-in');
+    
+            setTimeout(() => {
+                image.classList.remove('fade-in');
+                title.classList.remove('fade-in');
+                text.classList.remove('fade-in');
+            }, 500);
+        }, 500);
+    }
+
+    function changeContentSecondDiv(imagePath, titleText, paragraphText) {
+        const image = document.getElementById('dynamicImageDuplicate');
+        const title = document.getElementById('dynamicTitleDuplicate');
+        const text = document.getElementById('dynamicTextDuplicate');
+    
+        image.classList.add('fade-out');
+        title.classList.add('fade-out');
+        text.classList.add('fade-out');
+    
+        setTimeout(() => {
+            image.src = imagePath;
+            title.textContent = titleText;
+            text.textContent = paragraphText;
+    
+            image.classList.remove('fade-out');
+            title.classList.remove('fade-out');
+            text.classList.remove('fade-out');
+    
+            image.classList.add('fade-in');
+            title.classList.add('fade-in');
+            text.classList.add('fade-in');
+    
+            setTimeout(() => {
+                image.classList.remove('fade-in');
+                title.classList.remove('fade-in');
+                text.classList.remove('fade-in');
+            }, 500);
+        }, 500);
+    }
+    function changeContentThirdDiv(imagePath, titleText, paragraphText) {
+    const image = document.getElementById('dynamicImageThird');
+    const title = document.getElementById('dynamicTitleThird');
+    const text = document.getElementById('dynamicTextThird');
+
+    image.classList.add('fade-out');
+    title.classList.add('fade-out');
+    text.classList.add('fade-out');
+
+    setTimeout(() => {
+        image.src = imagePath;
+        title.textContent = titleText;
+        text.textContent = paragraphText;
+
+        image.classList.remove('fade-out');
+        title.classList.remove('fade-out');
+        text.classList.remove('fade-out');
+
+        image.classList.add('fade-in');
+        title.classList.add('fade-in');
+        text.classList.add('fade-in');
+
+        setTimeout(() => {
+            image.classList.remove('fade-in');
+            title.classList.remove('fade-in');
+            text.classList.remove('fade-in');
+        }, 500);
+    }, 500);
+}
+
 </script>
 
-    
+
+ 
     
     <hr id="hr-perso">
     <div class="image-slider">
@@ -238,18 +759,7 @@
         <img src="assets/c (4).png" alt="Imagem 1"> 
         <img src="assets/c (5).png" alt="Imagem 1">
         <img src="assets/c (6).png" alt="Imagem 1">
-        <img src="assets/c (1).png" alt="Imagem 1">
-        <img src="assets/c (2).png" alt="Imagem 1"> 
-        <img src="assets/c (3).png" alt="Imagem 1">
-        <img src="assets/c (4).png" alt="Imagem 1"> 
-        <img src="assets/c (5).png" alt="Imagem 1">
-        <img src="assets/c (6).png" alt="Imagem 1">
-        <img src="assets/c (1).png" alt="Imagem 1">
-        <img src="assets/c (2).png" alt="Imagem 1"> 
-        <img src="assets/c (3).png" alt="Imagem 1">
-        <img src="assets/c (4).png" alt="Imagem 1"> 
-        <img src="assets/c (5).png" alt="Imagem 1">
-        <img src="assets/c (6).png" alt="Imagem 1">
+       
 
        
     </div>
