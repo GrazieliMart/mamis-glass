@@ -403,50 +403,246 @@ footer {
     opacity: 1;
     transition: opacity 0.5s ease;
 }
-
+@media (max-width: 950px) {
+    #logo-content {
+    width: 30%;
+    height: 100px;
+}
+.icons-section {
+    display: none;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+footer .footer-div {
+        /* flex: 1; */
+        padding: 0 100px;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+    }footer .footer-buttons {
+        display: flex;
+        gap: 0px;
+        justify-content: center;
+    }
+    .navbar .logo img {
+        height: 50px;
+        margin-left: 0px;
+        transition: height 0.3s ease;
+    }
+    footer .footer-buttons .button1 {
+        background-color: #fff;
+        color: #000;
+        padding: 10px 10px;
+        border: none;
+        margin-right: 20px;
+        margin-left: 20px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    footer .footer-div:not(:last-child):after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 0px;
+        background-color: #fff;
+    }
+    footer .footer-menu {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 50px;
+    }footer .footer-div {
+        /* flex: 1; */
+        padding: 0 50px;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+    }
+    footer {
+       
+        color: #fff;
+        padding: 40px 20px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+.content {
+    display: grid;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    gap: 20px;
+}
+.content-duplicate {
+    display: grid;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    gap: 20px;
+}
+.content-duplicate img {
+    width: 100%;
+    height: 400px;
+}
+#hr-perso {
+    margin-left: 600px;
+    margin-top: 0px;
+}
+#logo-content-duplicate {
+        width: 30%;
+        height: 100px;
+    }
+   
+.text-section-duplicate {
+    width: 75%;
+    padding: 30px;
+    color: #080808;
+    text-align: left;
+}
+.icons-section-duplicate {
+    display: none;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.icons-section {
+        display: none;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+.content img {
+    width: 100%;
+    height: 400px;
+}
+.image-form-section .right-form {
+    flex: 1;
+    padding-left: 0px;
+}
+#button {
+    z-index: 2;
+    position: relative;
+    width: 30%;
+    border: none;
+    background-color: rgb(47 70 100);
+    height: 30px;
+    color: white;
+    font-size: .8em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.text-section {
+        width: 75%;
+        padding: 30px;
+        color: #080808;
+    }
+.icon-box p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #333;
+}
+.icon-box h2 {
+    font-size: 16px;
+}
+.icon-box {
+    text-align: center;
+    padding: 0px;
+    width: 30%;
+}
+.side-content {
+    position: relative;
+    height: auto;
+    margin-top: 5%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    animation: slideIn 1s ease forwards;
+}
+.side-content-duplicate {
+    position: relative;
+    height: auto;
+    margin-top: 5%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    animation: slideIn 1s ease forwards;
+}
+}
 
 </style>
 </head>
 <body> 
     <header>
-    <div class="banner">  
-        <div class="banner-left">
-            <p>
-                <i class="bi bi-envelope"></i>
-                <a href="mailto:contato@mamisglass.com.br">
-                    contato@mamisglass.com.br
-                </a>
-            </p>
+        <div class="banner">  
+            <div class="banner-left">
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    <a href="mailto:contato@mamisglass.com.br">
+                        contato@mamisglass.com.br
+                    </a>
+                </p>
+            </div>
+            
+            <div class="banner-text">
+                <p>Bem-vindo à MAMISGLASS - Transformando seu Ambiente com Vidro</p>
+            </div>
+            <div class="banner-right">
+                <p><a href="https://api.whatsapp.com/send/?phone=5511948829326&text=Ol%C3%A1%21+Vim+do+site+da+MamisGlass.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"><i class="bi bi-telephone-fill"></i> +55 11 98765-4321</p></a>
+            </div>
         </div>
         
-        <div class="banner-text">
-            <p>Bem-vindo à MAMISGLASS - Transformando seu Ambiente com Vidro</p>
-        </div>
-        <div class="banner-right">
-            <p><a href="https://api.whatsapp.com/send/?phone=5511948829326&text=Ol%C3%A1%21+Vim+do+site+da+MamisGlass.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"><i class="bi bi-telephone-fill"></i> +55 11 98765-4321</p></a>
-        </div>
-    </div>
     
-
-    <div class="navbar">
-        <div class="logo">
-            
-        <a href="index.html"><img src="assets/logo-big.png" alt="Logo"></a>
+        <div class="navbar">
+            <div class="logo">
+                
+            <a href="index.html"><img src="assets/logo-big.png" alt="Logo"></a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="sobre.html">SOBRE</a>
+                <a href="produtos.html">PRODUTOS</a>
+                <a href="contato.html">CONTATO</a>
+            </div>
+            <div class="social-media">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/mamisglass/"> <i class="bi bi-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=5511948829326&text=Ol%C3%A1%21+Vim+do+site+da+MamisGlass.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"><i class="bi bi-whatsapp"></i></a>
+                <button class="contact-btn">REALIZAR ORÇAMENTO</button>
+            </div>
+              <!-- Menu Sanduíche -->
+              <div class="menu-toggle">
+                <i class="bi bi-list"></i>
+            </div>
         </div>
-        <div class="nav-links">
+        <div class="mobile-menu">
+            <span class="close-menu">&times;</span>
             <a href="index.html">HOME</a>
             <a href="sobre.html">SOBRE</a>
             <a href="produtos.html">PRODUTOS</a>
             <a href="contato.html">CONTATO</a>
         </div>
-        <div class="social-media">
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/mamisglass/"> <i class="bi bi-instagram"></i></a>
-            <a href="https://api.whatsapp.com/send/?phone=5511948829326&text=Ol%C3%A1%21+Vim+do+site+da+MamisGlass.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"><i class="bi bi-whatsapp"></i></a>
-            <a href="contato.html"><button class="contact-btn">REALIZAR ORÇAMENTO</button></a>
-        </div>
-    </div>
-</header>
+        
+        <script>// Abrir o Menu
+            document.querySelector('.menu-toggle').addEventListener('click', function() {
+                document.querySelector('.mobile-menu').classList.add('active');
+            });
+            
+            // Fechar o Menu
+            document.querySelector('.close-menu').addEventListener('click', function() {
+                document.querySelector('.mobile-menu').classList.remove('active');
+            });
+            
+        </script>
+    </header>
+
 
 
 <script src="js/banner.js"></script>

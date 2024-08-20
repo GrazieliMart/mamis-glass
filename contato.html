@@ -19,47 +19,90 @@
     text-align: center;
     padding: 0px 20px 130PX 40PX;
 }
+@media (max-width: 950px) {
+    .image-form-section .left-image {
+    flex: 0;
+    background-color: #ffffff;
+    padding-right: 20px;
+}
+.image-form-section .right-form {
+    flex: 1;
+    padding-left: 0px;
+}
+.image-form-section {
+    display: flex;
+    padding: 120px 20px 0px 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+}
     </style>
 </head>
-<body> <header>
-    <div class="banner">  
-        <div class="banner-left">
-            <p>
-                <i class="bi bi-envelope"></i>
-                <a href="mailto:contato@mamisglass.com.br">
-                    contato@mamisglass.com.br
-                </a>
-            </p>
+<body> 
+    <header>
+        <div class="banner">  
+            <div class="banner-left">
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    <a href="mailto:contato@mamisglass.com.br">
+                        contato@mamisglass.com.br
+                    </a>
+                </p>
+            </div>
+            
+            <div class="banner-text">
+                <p>Bem-vindo à MAMISGLASS - Transformando seu Ambiente com Vidro</p>
+            </div>
+            <div class="banner-right">
+                <p><a href="https://api.whatsapp.com/send/?phone=5511948829326&text=Ol%C3%A1%21+Vim+do+site+da+MamisGlass.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"><i class="bi bi-telephone-fill"></i> +55 11 98765-4321</p></a>
+            </div>
         </div>
         
-        <div class="banner-text">
-            <p>Bem-vindo à MAMISGLASS - Transformando seu Ambiente com Vidro</p>
-        </div>
-        <div class="banner-right">
-            <p><a href="https://api.whatsapp.com/send/?phone=5511948829326&text=Ol%C3%A1%21+Vim+do+site+da+MamisGlass.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"><i class="bi bi-telephone-fill"></i> +55 11 98765-4321</p></a>
-        </div>
-    </div>
     
-
-    <div class="navbar">
-        <div class="logo">
-            
-        <a href="index.html"><img src="assets/logo-big.png" alt="Logo"></a>
+        <div class="navbar">
+            <div class="logo">
+                
+            <a href="index.html"><img src="assets/logo-big.png" alt="Logo"></a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="sobre.html">SOBRE</a>
+                <a href="produtos.html">PRODUTOS</a>
+                <a href="contato.html">CONTATO</a>
+            </div>
+            <div class="social-media">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/mamisglass/"> <i class="bi bi-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=5511948829326&text=Ol%C3%A1%21+Vim+do+site+da+MamisGlass.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"><i class="bi bi-whatsapp"></i></a>
+                <button class="contact-btn">REALIZAR ORÇAMENTO</button>
+            </div>
+              <!-- Menu Sanduíche -->
+              <div class="menu-toggle">
+                <i class="bi bi-list"></i>
+            </div>
         </div>
-        <div class="nav-links">
+        <div class="mobile-menu">
+            <span class="close-menu">&times;</span>
             <a href="index.html">HOME</a>
             <a href="sobre.html">SOBRE</a>
             <a href="produtos.html">PRODUTOS</a>
-            <a href="contact.html">CONTATO</a>
+            <a href="contato.html">CONTATO</a>
         </div>
-        <div class="social-media">
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/mamisglass/"> <i class="bi bi-instagram"></i></a>
-            <a href="https://api.whatsapp.com/send/?phone=5511948829326&text=Ol%C3%A1%21+Vim+do+site+da+MamisGlass.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"><i class="bi bi-whatsapp"></i></a>
-            <button class="contact-btn">REALIZAR ORÇAMENTO</button>
-        </div>
-    </div>
-</header>
+        
+        <script>// Abrir o Menu
+            document.querySelector('.menu-toggle').addEventListener('click', function() {
+                document.querySelector('.mobile-menu').classList.add('active');
+            });
+            
+            // Fechar o Menu
+            document.querySelector('.close-menu').addEventListener('click', function() {
+                document.querySelector('.mobile-menu').classList.remove('active');
+            });
+            
+        </script>
+    </header>
+    
 
 
 <script src="js/banner.js"></script>
@@ -280,8 +323,7 @@
    
         </div>
     </div>
-</footer><div class="overlay3 blue"></div>
-<div class="overlay3 yellow"></div>
+</footer>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
